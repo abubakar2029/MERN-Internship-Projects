@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .temp {
+      background-color: black;
+      color: white;
+    }
+    .temp2 {
+      background-color: rgb(35, 17, 201);
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="flex justify-between px-10 items-center">
+      <h1>Task page</h1>
+      <button class="temp btn">Create New</button>
+    </div>
+    <main>
+      <div>
+        <h2>In progress</h2>
+        <!-- Task component -->
+        <div
+          class="flex task-row items-start gap-y-10 justify-between border-b-2"
+        >
+          <div class="flex gap-y-10 justify-between grow-1">
+            <label class="check-container pointer">
+              <input type="checkbox" class="mt-8 cursor-pointer" />
+              <span class="checkmark"> </span>
+            </label>
+            <div class="pointer">
+              <h3 class="my-0">Title</h3>
+              <p class="my-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                ipsum dolor sit od corrupti earum, to?
+              </p>
+            </div>
+          </div>
+          <!-- buttons -->
+          <div class="flex gap-y-10 px-10">
+            <button class="temp2 btn font-med cursor-default">
+              In progress
+            </button>
+            <button class="temp btn font-med">Remove</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>Completed</h2>
+        <!-- Task component -->
+      </div>
+    </main>
+  </body>
+</html>

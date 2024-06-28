@@ -1,0 +1,139 @@
+/* Button Classes */
+.btn {
+  padding: 10px 15px;
+  font-size: large;
+  border-radius: 22px;
+  cursor: pointer;
+  text-wrap: nowrap;
+  width: 150px;
+  text-align: center;
+}
+.btn2 {
+  padding: 10px 15px;
+  font-size: large;
+  border-radius: 22px;
+  cursor: pointer;
+  text-wrap: nowrap;
+  width: 120px;
+  max-width: 150px;
+  text-align: center;
+}
+.task-row {
+  max-width: 1260px;
+}
+
+/* flexBox-Classes */
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.grow-1 {
+  flex-grow: 1;
+}
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.py-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.gap-y-10 {
+  column-gap: 10px;
+}
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.font-med {
+  font-size: medium !important;
+}
+.border-b-2 {
+  border-bottom: 1px solid black;
+}
+
+/* cursors */
+.cursor-default {
+  cursor: default;
+}
+.pointer {
+  cursor: pointer;
+}
+.check-container {
+  position: relative;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+.check-container input {
+  position: absolute;
+  opacity: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #eee;
+}
+.check-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.check-container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.check-container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* media queries */
+@media screen and (max-width: 720px) {
+  body {
+    background-color: lightgreen;
+  }
+  .task-row {
+    flex-direction: column;
+    row-gap: 5px;
+    padding-bottom: 5px;
+    font-size: small !important;
+  }
+  .task-row button {
+    font-size: small !important;
+  }
+}
+@media screen and (min-width: 580px) {
+  body {
+    background-color: rgb(222, 238, 144);
+  }
+  .task-row {
+    padding-left: 10px;
+  }
+}
