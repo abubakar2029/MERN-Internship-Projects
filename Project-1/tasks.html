@@ -24,8 +24,70 @@
     <main>
       <div>
         <h2>In progress</h2>
-        <div id="taskList"></div>
-        <!-- Task component -->
+        <table>
+          <thead>
+            <tr>
+              <th style="min-width: 25px"></th>
+              <th>Title and Description</th>
+              <th>Status</th>
+              <th>Delete it!</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding-top: 25px;">
+                <label class="check-container pointer">
+                  <input type="checkbox" class="mt-8 cursor-pointer" />
+                  <span class="checkmark"> </span>
+                </label>
+              </td>
+              <td class="pointer">
+                <h3 class="my-0">Title</h3>
+                <p class="my-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                  ipsum dolor sit od corrupti earum, to?
+                </p>
+              </td>
+              <td>
+                <p class="temp2 btn font-med cursor-default">
+                  In progress
+              </p>
+              </td>
+              <td><button class="temp btn font-med">Remove</button></td>
+            </tr>
+            <tr>
+              <td style="padding-top: 25px;">
+                <label class="check-container pointer">
+                  <input type="checkbox" class="mt-8 cursor-pointer" />
+                  <span class="checkmark"> </span>
+                </label>
+              </td>
+              <td class="pointer">
+                <h3 class="my-0">Title</h3>
+                <p class="my-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                  ipsum dolor sit od corrupti earum, to? Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Sequi, repellat adipisci
+                  nisi tempora libero praesentium quaerat suscipit, pariatur
+                  magnam nemo, quibusdam veritatis!lorem66 lore33 Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Iste excepturi,
+                  atque delectus facere recusandae, autem totam libero corrupti,
+                  repudiandae provident quod eius laboriosam eum dolore sint
+                  culpa nostrum itaque! Enim ut placeat tenetur!
+                </p>
+              </td>
+              <td>
+                <p class="temp2 btn font-med cursor-default">
+                  In progress
+                </p>
+              </td>
+              <td><button class="temp btn font-med">Remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <div id="taskList"></div>
+        Task component
+
         <div class="task-row">
           <div class="flex gap-y-10 justify-between items-start container">
             <div class="flex gap-y-10 justify-evenly grow-1">
@@ -41,7 +103,7 @@
                 </p>
               </div>
             </div>
-            <!-- buttons -->
+            
             <div class="flex gap-y-10 px-10">
               <button class="temp2 btn font-med cursor-default">
                 In progress
@@ -53,7 +115,7 @@
             style="background-color: black; margin: 2px 10px; height: 1px"
           ></div>
         </div>
-      </div>
+      </div> -->
       <div>
         <h2>Completed</h2>
         <!-- Task component -->
