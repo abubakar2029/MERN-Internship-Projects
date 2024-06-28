@@ -20,6 +20,8 @@
 }
 .task-row {
   max-width: 1260px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* flexBox-Classes */
@@ -114,15 +116,48 @@
   transform: rotate(45deg);
 }
 
+#formElement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#create-form {
+  padding: 20px 40px;
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#create-form label {
+  color: #333;
+  font-weight: bold;
+}
+#create-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 /* media queries */
 @media screen and (max-width: 720px) {
   body {
     background-color: lightgreen;
   }
-  .task-row {
+  .container {
     flex-direction: column;
     row-gap: 5px;
-    padding-bottom: 5px;
+    padding: 0px 5px 5px 8px;
     font-size: small !important;
   }
   .task-row button {
