@@ -6,7 +6,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 
     if (name && email && message) {
         alert('Message sent successfully!');
-        // Here you can add code to send the form data to a server
     } else {
         alert('Please fill in all fields');
     }
